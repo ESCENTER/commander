@@ -1,22 +1,21 @@
 def num(y)
-	y = y.to_s
-	b = []
-	y.each_char do |n|
-		b.push n
+  y = y.to_s
+  b = []
+  y.each_char do |n|
+  b.push n.to_i
   end
   b
 end
 
 def cube(x)
-	a = x * x *x 
+  a = x * x *x 
 end
 
 
 arr = (101..999).to_a
 
 arr.each do |n|
-	 flower =[]
-	 n = n.to_i
+   flower =[]
    count = num(n)
 
    q = count[0].to_i
@@ -26,7 +25,7 @@ arr.each do |n|
    if n == cube(q) + cube(w) + cube(e)
    flower.push n
    end
-   puts flower
+     
 end 
 
-
+puts flower
