@@ -8,7 +8,7 @@ def num(y)
 end
 
 def cube(x)
-  a = x * x *x 
+  a = x * x *　x 
 end
 
 
@@ -25,7 +25,7 @@ arr.each do |n|
    if n == cube(q) + cube(w) + cube(e)
    flower.push n
    end
-     
+
 end 
 
 puts flower
